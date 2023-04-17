@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>machine learning</title>
+  </head>
+  <body style="background-color:black">
+    <form action='{{url_for('predict')}}' method='post'>
+      <input type='text' name="diabetes[]" placeholder="Enter Pregnancies information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]" placeholder="Enter Glucose information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]"  placeholder="Enter BloodPressure information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]" placeholder="Enter SkinThickness information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]"  placeholder="Enter Insulin information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]" placeholder="Enter BMI information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]"  placeholder="Enter PedigreeFunction information" style="padding:5px;width:220px;"></input><br><br>
+      <input type='text' name="diabetes[]"  placeholder="Enter Age information" style="padding:5px;width:220px;"></input><br><br>
+      <button type="submit">Predict</button>
+    </form>
+    <h3 style="color:white;"><br>{{prediction_text}}</h3>
+  </body>
+</html>
